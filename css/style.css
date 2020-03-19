@@ -1,0 +1,41 @@
+#chesscontainer{
+    width: 416px;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#chesscontainer > div{
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#chesscontainer img{
+    width: 80%;
+}
+
+.blackcell{
+    background-color: #222;
+}
+
+.blackcell img{
+    -webkit-filter: drop-shadow(1px 1px 0 white)
+        drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white) 
+        drop-shadow(-1px -1px 0 white);
+}
+
+.whitecell{
+    background-color: #ddd;
+}
+
+.whitecell img{
+    -webkit-filter: drop-shadow(1px 1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+}
